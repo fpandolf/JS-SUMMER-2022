@@ -46,21 +46,30 @@
    * Pre increment ++num1 before all operators
    */
 
-let lvar1=10
-let lvar2=20
-let lvar3=30
-let lvar4=40
+//let lvar1=10
+//let lvar2=20
+//let lvar3=30
+//let lvar4=40
 
-let res1 = lvar1 + lvar2++;
-console.log(`lvar1 =${lvar1}`);
-console.log(`lvar2 =${lvar2}`);
-console.log(`res1 =${res1}`);
+//let res1 = lvar1 + lvar2++;
+//console.log(`lvar1 =${lvar1}`);
+//console.log(`lvar2 =${lvar2}`);
+//console.log(`res1 =${res1}`);
 
 // "/n" adds a space to the result
 
-let x = 2-4+1*3;
+//let x = 2-4+1*3;
 
-let res2 = lvar1++ - ++lvar2  // 4 operators (Pre-increment (always first), subtraction, assignment, post-increment(always last))
-console.log(`\n\nlvar1 =${lvar1}`);
-console.log(`lvar2 =${lvar2}`);
-console.log(`res2 =${res2}`);
+//let res2 = lvar1++ - ++lvar2  // 4 operators (Pre-increment (always first), subtraction, assignment, post-increment(always last))
+//console.log(`\n\nlvar1 =${lvar1}`);
+//console.log(`lvar2 =${lvar2}`);
+//console.log(`res2 =${res2}`);
+
+// let num2 = 20
+// let res2 = num2++ - num2
+// console.log(res2);   // res2 = -1 (not 0)
+// console.log(num2);   // num2 = 21
+
+// Interesting interaction when same variable comes after post increment in operation it uses the updated value
+
+
