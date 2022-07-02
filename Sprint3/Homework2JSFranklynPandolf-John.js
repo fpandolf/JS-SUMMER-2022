@@ -38,7 +38,7 @@ const sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiO
  */
 //1
 let sentence3Length = sentence3.length;
-console.log(`The length of sentence3 is ${sentence3Length}`);
+console.log(`The length of sentence3 is ${sentence3Length} characters`);
 //2
 let startsWithPattern1 = 'health';
 //let sentence3Lowercase = sentence3.toLowerCase();
