@@ -61,10 +61,10 @@ console.log(`"Body" first appears in sentence3 at index : ${indexPosition_IP1}`)
 let lastCharacterSentence3 = sentence3.charAt((sentence3Length-1));
 console.log(`The last character in sentence3 is "${lastCharacterSentence3}" `);
 //6
-indexPattern2 = 'Body';
+let indexPattern2 = 'Body';
 let indexPosition_IP2 = sentence3.toLowerCase().indexOf(indexPattern2.toLowerCase());
 let lastIndexPattern2 = 'Body';
 let lastIndexPosition_IP2 = sentence3.toLowerCase().lastIndexOf(indexPattern2.toLowerCase());
 //console.log(`Body last appears in sentence3 at index : ${lastIndexPosition_IP1}`);
 let isIP2EqLIP2 = (indexPosition_IP2 === lastIndexPosition_IP2) && (indexPosition_IP2 >= 0);   // the two index values must be equal and not be -1 (invalid) to show indexPattern2 occurs just once
-console.log(`Is "Body" present just once in sentence3: ${isIP2EqLIP2} `);
+console.log(`Is "Body" present just once in sentence3: ${isIP2EqLIP2}`);
