@@ -8,7 +8,7 @@ let result1 = 0;
  * otherwise
  *      assign 25 in result1
  */
-//let sentence1Length = sentence1.length;       // no need to store
+//let sentence1Length = sentence1.length;       // no need to store // good practice
 //result1 = sentence1length >= 10 ? 15 : 25;    // no need to store
 result1 = sentence1.length >= 10 ? 15 : 25;
 
@@ -44,27 +44,27 @@ let startsWithPattern1 = 'health';
 //let sentence3Lowercase = sentence3.toLowerCase();
 //let sentence3StartsWith_health = sentence3Lowercase.startsWith(startsWithPattern1);
 //console.log(`Does ${sentence3} start with 'health' (ignoring case) : ${sentence3StartsWith_health}`);
-//  below is the cleaner way
+//  below is the cleaner way // good practice
 let sentence3StartsWith_SWP1 = sentence3.toLowerCase().startsWith(startsWithPattern1.toLowerCase());
-console.log(`Does sentence3 start with "health" (ignoring case) : ${sentence3StartsWith_SWP1}`);
+console.log(`Does sentence3 start with "${startsWithPattern1}" (ignoring case) : ${sentence3StartsWith_SWP1}`);
 //3
 let includesPattern1 = 'Body';
 let sentence3Includes_IP1 = sentence3.toLowerCase().includes(includesPattern1.toLowerCase());
-console.log(`Does sentence3 include "Body" (ignoring case) : ${sentence3Includes_IP1}`);
+console.log(`Does sentence3 include "${includesPattern1}" (ignoring case) : ${sentence3Includes_IP1}`);
 //4
 let indexPattern1 = 'Body';
 let indexPosition_IP1 = sentence3.toLowerCase().indexOf(indexPattern1.toLowerCase());
-console.log(`"Body" first appears in sentence3 at index : ${indexPosition_IP1}`);
+console.log(`"${indexPattern1}" first appears in sentence3 at index : ${indexPosition_IP1}`);
 //5
 //let sentence3Length = sentence3.length;                          // defined in first question
-//let indexPositionLastCharacterSentence3 = sentence3Length - 1;   // no need to store this value
+//let indexPositionLastCharacterSentence3 = sentence3Length - 1;   // no need to store this value // good practice
 let lastCharacterSentence3 = sentence3.charAt((sentence3Length-1));
 console.log(`The last character in sentence3 is "${lastCharacterSentence3}" `);
 //6
 let indexPattern2 = 'Body';
 let indexPosition_IP2 = sentence3.toLowerCase().indexOf(indexPattern2.toLowerCase());
-let lastIndexPattern2 = 'Body';
+//let lastIndexPattern2 = 'Body'; // good practrice it will always be equal to indexPattern2
 let lastIndexPosition_IP2 = sentence3.toLowerCase().lastIndexOf(indexPattern2.toLowerCase());
 //console.log(`Body last appears in sentence3 at index : ${lastIndexPosition_IP1}`);
 let isIP2EqLIP2 = (indexPosition_IP2 === lastIndexPosition_IP2) && (indexPosition_IP2 >= 0);   // the two index values must be equal and not be -1 (invalid) to show indexPattern2 occurs just once
-console.log(`Is "Body" present just once in sentence3: ${isIP2EqLIP2}`);
+console.log(`Is "${indexPattern2}" present just once in sentence3: ${isIP2EqLIP2}`);

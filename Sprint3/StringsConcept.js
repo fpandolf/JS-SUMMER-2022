@@ -172,7 +172,7 @@ Methods  //  Functions
   * input type = number (location in index to check what character is there) 
   * 
   */
- let sentence = 'asdfasdfasdfasdf'
+ //let sentence = 'asdfasdfasdfasdf'
 //  console.log(sentence.charAt(2));
 //  console.log(sentence.charAt(200));   //beyond the scope (invalid in this case) returns nothing
 //  console.log(sentence.charAt(-4));   // also invalid  (always for negative value) returns nothing
@@ -198,6 +198,84 @@ Methods  //  Functions
   * result = number : index where the pattern last occurs  or -1 if not present
   */
 
-  console.log(sentence.lastIndexOf('a'))
-  console.log(sentence.lastIndexOf('sdf'))
-  console.log(sentence.lastIndexOf('b'))
+  //console.log(sentence.lastIndexOf('a'))
+  //console.log(sentence.lastIndexOf('sdf'))
+  //console.log(sentence.lastIndexOf('b'))
+
+  /**
+   * Function: localCompare
+   * To compare to strings including case differences
+   *    if equal = 0
+   *    if string 1 bigger = 1
+   *    if string 2 bigger = -1
+   *  str1.localCompare(str2)
+   * 
+   * input: 2 strings
+   * output: number
+   * 
+   */  
+
+  /**
+   * Functions: slice(), substring(), substr()
+   *    - extract a string piece from a given string
+   * 
+   * subString(start) or subString(start, end)
+   *    - providing start or start and end index gives range
+   *    - excludes end index
+   *    - returns extracted string as a value and does not change the original string
+   * 
+   */
+
+// let mySentence = 'Pages That you vIeW in tHIs wont'
+// const subStringMySentence1_4 = mySentence.substring(1,4)
+// console.log(subStringMySentence1_4);
+
+// invalid values 
+//const mySentence2 = 'Helxo'
+//console.log(mySentence2.substring(2,20))
+// if end value missing or invalid returns  up to the end
+//console.log(mySentence2.substring(-2,20))
+// if  value is invalid ( negative or larger than string) it treats it as 0
+//console.log(mySentence2.substring(4,1))
+// if second value is earlier in index it treast it as the first value and runs to the first
+
+/**
+ * slice(start, end)
+ * 
+ */
+// console.log(mySentence2.slice(1,4));
+// console.log(mySentence2.slice(-3,-1));
+// finds the index from the last to first when negative included and prints it start to finish
+
+/**
+ * substr(start, lengthToExtract)
+ *
+ */
+ //console.log(mySentence2.substr(2,2));
+
+/**
+ * Function: split()
+ *  - cuts string into multiple strings **around** given pattern, places results in a single array
+ *  - 'New York City' cut at " "
+ * becomes
+ *  - ['New', 'York', 'City']
+ * 
+ *  - 'New York City' cut at "o"
+ *  becomes
+ *  - ['New Y', 'rk City']
+ */
+// let cityName = 'New York City'
+// console.log(cityName.split(' '))    // cut at space
+// console.log(cityName.split('o'))    // cut at o
+// console.log(cityName.split(''))     // cuts in between every single character with nothing in quotes
+
+let word = 'laUGH'
+//convert into Title Case
+let wordLowerCase = word.toLowerCase(); //1 into lower case
+console.log(wordLowerCase);
+let wordLCFirstCharacter = wordLowerCase.charAt(0);     //ID first character
+console.log(wordLCFirstCharacter);
+let wordFirstCharacterUC = wordLCFirstCharacter.toUpperCase();  // Store first character as Uppercase
+console.log(wordFirstCharacterUC);
+let wordTitleCase = wordLowerCase.replace(wordLCFirstCharacter, wordFirstCharacterUC); // replace first letter of lowercase version with Uppercase
+console.log(`${word} in title case is ${wordTitleCase}`);
