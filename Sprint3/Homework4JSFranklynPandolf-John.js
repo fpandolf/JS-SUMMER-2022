@@ -19,8 +19,8 @@
  * Grade -> C
  */
 
-var studentScore = '';
-var maxScore = 50;
+var studentScore = 90;     // student's individual scores entered in this line
+const maxScore = 90;
 let studentPercentage = studentScore/maxScore;
 
 if (studentPercentage >= .91 && studentScore >= 0 && studentScore <= maxScore) {

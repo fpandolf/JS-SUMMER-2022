@@ -92,3 +92,6 @@ const sentenceQ4 = 'YOu ONlY lIVe ONcE';
  let abbreviationSentenceQ4 = firstLetterSentenceQ4UCWord1.concat(firstLetterSentenceQ4UCWord2, firstLetterSentenceQ4UCWord3, firstLetterSentenceQ4UCWord4);
  // combining just the first letters of the Upper Case words with no spaces  with concat yields the Abbreviated form
  console.log(`Q4: "${sentenceQ4}" abbreviated becomes "${abbreviationSentenceQ4}"`);
+
+console.log('Single Line attempt');
+console.log(sentenceQ4.toUpperCase().split(' ')[0].charAt(0).concat(sentenceQ4.toUpperCase().split(' ')[1].charAt(0), sentenceQ4.toUpperCase().split(' ')[2].charAt(0), sentenceQ4.toUpperCase().split(' ')[3].charAt(0) ))
