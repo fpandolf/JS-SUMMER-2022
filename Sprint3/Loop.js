@@ -98,7 +98,7 @@
  * 
  */
 
-const sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
+//const sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
 // let w = 0
 // while (w<=sports.length-1) {
 //     console.log(sports[w]);
@@ -166,4 +166,47 @@ const sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
 // // I looked up online there is a way easier way to do this with "map" and "join"  and indexing with word[0] etc, we will probably go over it in the next class :)
 // console.log(`\n\n`); 
 
-const sentenceQ3 = 'YOu ONlY lIVe ONcE';
+//const sentenceQ3 = 'YOu ONlY lIVe ONcE';
+
+/**
+ * for -of
+ * works with arrays and string
+ */
+// for (const sName of sports) {
+//   console.log(sName);
+// }
+// let myString = 'Hello World'
+// for (const lettersMyString of myString) {
+//     console.log(lettersMyString);
+// }
+
+/**
+ * for-in
+ * works with objects
+ * 
+ */
+// let Obj1 = {
+//   myname : 'Frank',
+//   age : 20,
+//   state : 'NY'
+// };
+// for (const att in Obj1) {
+//   console.log(att);     // prints attribute names
+//   console.log(Obj1[att]);
+// }
+
+/**
+ * for-each
+ * works with Array and functions
+ * 
+ * syntax: 
+ * arrayName.forEach(function (varName) {
+ *    code in function of for loop;
+ * });
+ */
+
+ const sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby']
+ sports.forEach(function (sport) {
+      console.log(sport);
+
+ })

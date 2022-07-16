@@ -93,7 +93,7 @@ if (myNumber % 5 === 0 && myNumber % 3 === 0) {
  * 
  */
 
- var sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
+ let sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
 
  if (sports[2].toLowerCase() === 'basketball') {
     console.log('BASKETBALL is present at index-2');
