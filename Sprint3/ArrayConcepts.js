@@ -135,3 +135,55 @@ if not present at any index gives -1
 // console.log(planets);
 // planets.reverse()
 // console.log(planets);
+
+
+/**
+ map()
+ applies an action to every value in array
+ does not chage original array
+ returns a new array same length as original apert performing action
+
+ syntax:
+
+ inputArray.map(functionName);
+ */
+
+ //siblingNames = siblingNames.map(sName => sName.toUpperCase());
+
+/**
+filter()
+filter values from array into new array based on conditions
+
+
+syntax:
+inputArray.filter(funtionName);
+ */
+
+// siblingNames = siblingNames.filter(sName => sName.includes('A'));
+
+/**
+every()
+provides true if all values of array pass specified condition
+ */
+// siblingNamesHasA = siblingNames.every(sName => sName.includes('A'));  // EV: true
+
+/**
+findIndex()
+returns the first index of array which passes condition
+ */
+//siblingNamesFirstAIndex = siblingNames.findIndex(sName => sName.includes('A'));
+//console.log(siblingName[siblingNamesFirstAIndex])
+
+/**
+find()
+returns the first value of array which passes condition (if none returns undefined)
+ */
+//siblingNamesFirstAIndex = siblingNames.find(sName => sName.includes('A'));
+
+/**
+reduce()
+execute function on every array-element to produce a single value
+
+
+ */
+//numbers.reduce(total, num => total= total + num)

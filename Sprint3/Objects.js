@@ -32,11 +32,56 @@
 //     age : 45
 // };
 let human1 = {
-    humanName : 'FPJ',
+    'human name' : 'FPJ',
+    88: 'yes',
     ssn : 2,
     gender : 'm',
     qualification :'bs',
     state : 'ny',
+    2: false,
     childrenNames : ['c1','c2']
 };
-console.log(human1.humanName[0].toLowerCase().concat(human1.humanName.substring(1)));
+//console.log(human1.humanName[0].toLowerCase().concat(human1.humanName.substring(1)));
+
+// Create empty object
+// let objectName = new Object();
+
+//for-in loop 
+// for (const objProp in human1) {
+//     console.log(objProp);
+//     console.log(human1[objProp]);
+// }
+
+// Keys are always stored as string data type, even digits (digits are printed iterated in loops first )
+
+/**
+To add key value pairs to object
+ */
+// console.log(human1);
+// human1.age = 22;
+// console.log(human1);
+
+// if key is a digit  or has space use square bracket
+
+// human1['7'] = 7;
+// console.log(human1);
+
+/**
+To delete key value pairs to object
+Operator: delete
+- will delete attribute if exists or if attribute doesn't exist
+-returns true
+-changes orginal object
+ */
+// console.log(human1);
+// delete human1.ssn;
+// console.log(human1);
+
+/**
+To verify if attribute is present
+Operator: in
+- if attribute is exactly present returns true
+- otherwise returns false
+-does not change orginal object
+ */
+//console.log('human name' in human1);
