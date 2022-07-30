@@ -37,6 +37,7 @@ return inputArray;
   * 
   * [2, 3, 1, 56, 23, 11]  ->   4
   * 
+  * [-1, 0, 2, 1]    ->  3
   * 
   * [1, 1, 2, 4, 3, 6, 4, 7, 9] ->   5
   * 
@@ -51,7 +52,7 @@ static smallestMissingPositive = (inputArray) => {
             biggestNumber = inputArray[i];
         };
     };
-    for (let i=biggestNumber; i >= 1; i--) {
+    for (let i=biggestNumber+1; i >= 1; i--) {
         if (inputArray.includes(i)){
         } else {
             firstMissing = i;
