@@ -7,7 +7,7 @@ const removeValue = 12
 console.log(`Q1: \nRemoving all instances of ${removeValue} from the array [${inputArrayQ1}] yeilds the new array [${MyCodeTestFunctions.removeNumber(inputArrayQ1, removeValue)}]`);
 
 //Q2:
-const inputArrayQ2 = [-1, 0, 2, 1]
+const inputArrayQ2 = [1, 1, 2, 4, 3, 6, 4, 7, 9]
 console.log(`Q2: \nThe smallest missing positive integer in the array [${inputArrayQ2}] is ${MyCodeTestFunctions.smallestMissingPositive(inputArrayQ2)}`);
 
 //Q3:
